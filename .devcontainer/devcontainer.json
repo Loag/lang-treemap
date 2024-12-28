@@ -1,0 +1,17 @@
+{
+  "name": "lang-treemap-dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "enkia.tokyo-night",
+        "PKief.material-icon-theme",
+        "Syler.sass-indented"
+      ]
+    }
+  },
+  "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh"
+}
